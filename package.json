@@ -1,0 +1,22 @@
+{
+  "name": "chiggychig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "concurrently \"npm start --prefix server\" \"npm start --prefix client\"",
+    "install": "concurrently \"npm install --prefix client\" \"npm install --prefix server\"",
+    "clean": "rm -rf client/node_modules client/package-lock.json server/node_modules server/package-lock.json node_modules package-lock.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
